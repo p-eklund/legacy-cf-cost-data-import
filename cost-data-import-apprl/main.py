@@ -67,7 +67,7 @@ def cost_data_import(event, context):
     # The credential associated with the service account (this allows the script to act as the service account)
     client = storage.Client()
     bucket = client.get_bucket('data_uploader')
-    blob = bucket.blob('precis-internal-gbg-d0803f11ffb7.json')
+    blob = bucket.blob('') #TODO insert credentials bucket
 
     blob.download_to_filename('/tmp/auth.json')
 
