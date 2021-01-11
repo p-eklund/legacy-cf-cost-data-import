@@ -57,7 +57,7 @@ def cost_data_import(event, context):
     elif country == "NO":
         datasetId = "xxx"
     else :
-        datasetId = "s-Aw7A7GRE2vqL0jZ6dmXQ"
+        datasetId = "xxx"
 
     ## GA input variables
     ga_account_id = '12345' #TODO add client account Id
