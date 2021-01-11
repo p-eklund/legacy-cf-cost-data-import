@@ -46,22 +46,22 @@ def cost_data_import(event, context):
     df_to_upload.to_csv(path_or_buf='/tmp/apprl_upload.csv',index=False,encoding='utf-8')
     
     #Define datasetId
-    country = attributes['country']
-    
+    country = attributes['country'] 
+    #TODO change dataset Id
     if country == "SE":
-        datasetId = "T5BRhmpJQzSEuzFVHh4qBA"
+        datasetId = "xxx"
     elif country == "DK":
-        datasetId = "mUnL5bqOTYGS1IbmBJINJQ"
+        datasetId = "xxx"
     elif country == "FI":
-        datasetId = "2Hx347-3SgOjOooX1vp6Gg"
+        datasetId = "xxx"
     elif country == "NO":
-        datasetId = "PCagfOk5QCyfCIZMkh34qg"
+        datasetId = "xxx"
     else :
         datasetId = "s-Aw7A7GRE2vqL0jZ6dmXQ"
 
     ## GA input variables
-    ga_account_id = '15181095'
-    ga_property_id = 'UA-15181095-2'
+    ga_account_id = '12345' #TODO add client account Id
+    ga_property_id = 'UA-XXXXX-X' #TODO add client property Id
     ga_data_set_id = datasetId
 
     # The credential associated with the service account (this allows the script to act as the service account)
