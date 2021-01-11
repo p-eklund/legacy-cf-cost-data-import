@@ -1,0 +1,9 @@
+# Function dependencies, for example:
+# package>=version
+requests
+pandas
+datetime
+google-cloud-storage
+google-api-python-client
+oauth2client
+criteo_marketing
