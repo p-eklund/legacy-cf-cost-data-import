@@ -24,7 +24,7 @@ def cost_data_importer(event, context):
 
     # Define the parameters (The key needs to acquired from Tradedoubler, programID or IDs are unique to the customer)
     parameters = {
-        'key' : '3bde99bd26c0852dcbd318619730325d',
+        'key' : '', #TODO set client key
         'reportName' : 'mMerchantOverviewReport',
         'programId' : message['programId'],
         'columns' : ['siteName', 'impNrOf', 'clickNrOf', 'totalCommission', 'programId'],
@@ -92,7 +92,7 @@ def cost_data_importer(event, context):
     # The credential associated with the service account (this allows the script to act as the service account)
     client = storage.Client()
     bucket = client.get_bucket('data_uploader')
-    blob = bucket.blob('precis-internal-gbg-d0803f11ffb7.json')
+    blob = bucket.blob('') #TODO set credentials bucket filename
 
     blob.download_to_filename('/tmp/auth.json')
 
